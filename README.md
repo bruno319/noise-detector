@@ -1,6 +1,6 @@
 # noise-detector
 
-A simple project using Rust that capture the audio from default microphone and play a alarm when it is noisy.
+A simple project using Rust that captures the audio from default microphone and sounds an alarm when the noise is loud.
 
 ## Dependencies
 - [Rust](https://www.rust-lang.org/tools/install)

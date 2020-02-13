@@ -20,7 +20,7 @@ impl NoiseState {
     pub fn new(mic_volume: Sensibility) -> NoiseState {
         NoiseState {
             sensibility: mic_volume,
-            sound_values: VecDeque::with_capacity(10000),
+            sound_values: VecDeque::with_capacity(7500),
         }
     }
 
