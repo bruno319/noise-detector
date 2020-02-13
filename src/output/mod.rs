@@ -33,7 +33,7 @@ impl Alarm {
             }
             portaudio::Continue
         };
-        let mut stream = portaudio
+        let stream = portaudio
             .open_non_blocking_stream(get_default_audio_output_settings(portaudio), sound_wave_callback)
             .expect("Unable to open output stream");
 
