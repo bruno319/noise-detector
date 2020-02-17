@@ -5,6 +5,8 @@ use portaudio;
 use crate::input::{get_input_settings, Sensibility, NoiseState};
 use crate::output::Alarm;
 use std::io::stdin;
+use std::thread;
+use std::time::Duration;
 
 mod output;
 
@@ -31,6 +33,7 @@ fn main() {
     stream.start().expect("Unable to start stream");
 
     while stream.is_active().unwrap() {
+        thread::sleep(Duration::from_millis(100));
         if noise_state.is_noisy() && !alarm.is_playing() {
             alarm.play(&pa).expect("Unable to play alarm sound");
         }
