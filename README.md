@@ -29,3 +29,8 @@ Run the project
 ```
 cargo run
 ```
+
+## running with docker
+```
+docker build -t noise-detector . && docker run -ti --device /dev/snd noise-detector
+```

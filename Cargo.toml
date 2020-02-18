@@ -1,5 +1,5 @@
 [package]
-name = "alarm"
+name = "noise-detector"
 version = "0.1.0"
 authors = ["bruno.vieira@ilegra.com <bruno319>"]
 edition = "2018"
